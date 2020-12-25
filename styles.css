@@ -21,7 +21,7 @@ body {
 
 @media screen and (max-height: 640px) {
   #container-div {
-    font-size: 100%;
+    font-size: 130%;
   }
   #tags {
     font-size: medium;
