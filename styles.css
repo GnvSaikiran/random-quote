@@ -18,3 +18,12 @@ body {
   font-size: large;
   margin-bottom: 14px;
 }
+
+@media screen and (max-height: 640px) {
+  #container-div {
+    font-size: 130%;
+  }
+  #tags {
+    font-size: medium;
+  }
+}
