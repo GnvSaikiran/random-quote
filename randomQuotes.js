@@ -21,7 +21,7 @@ randomQuote((err, data) => {
         let container = document.getElementById('container-div');
         let quote = document.createElement('h3');
         let author = document.createElement('p');
-        let tagsDiv = document.createElement('p');
+        let tags = document.createElement('p');
 
         quote.textContent = data.content;
         author.textContent = `-${data.author}`;
@@ -31,11 +31,11 @@ randomQuote((err, data) => {
 
         console.log(`${data.content}\n-${data.author}`);
         for (let tag of data.tags) {
-            tagsDiv.textContent += ` #${tag}`
+            tags.textContent += ` #${tag}`
             console.log(`#${tag}`)
         }
-        tagsDiv.setAttribute('id', 'tags-div')
-        container.appendChild(tagsDiv)
+        tags.setAttribute('id', 'tags')
+        container.appendChild(tags)
 
     }
 });
